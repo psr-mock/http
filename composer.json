@@ -1,0 +1,67 @@
+{
+    "name": "psr-mock/http",
+    "description": "Lightweight mock implementations of PSR-18, PSR-17 and PSR-7 tailored to simplify unit testing.",
+    "license": "MIT",
+    "type": "metapackage",
+    "keywords": [
+        "psr",
+        "discovery",
+        "psr-7",
+        "psr-17",
+        "psr-18",
+        "http-client-implementation",
+        "http-factory-implementation",
+        "http-message-implementation"
+    ],
+    "authors": [
+        {
+            "name": "Evan Sims",
+            "email": "hello@evansims.com",
+            "homepage": "https://evansims.com/"
+        }
+    ],
+    "homepage": "https://github.com/psr-mock",
+    "require": {
+        "php": "^8.0",
+        "psr-mock/http-client-implementation": "^1.0",
+        "psr-mock/http-factory-implementation": "^1.0",
+        "psr-mock/http-message-implementation": "^1.0"
+    },
+    "provide": {
+        "psr/http-client-implementation": "^1.0",
+        "psr/http-factory-implementation": "^1.0",
+        "psr/http-message-implementation": "^1.0"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "autoload": {
+        "psr-4": {
+            "PsrDiscovery\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "PsrDiscovery\\Tests\\": "tests"
+        }
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "process-timeout": 0,
+        "sort-packages": true
+    },
+    "extra": {
+        "merge-plugin": {
+            "ignore-duplicates": false,
+            "include": [
+                "composer.local.json"
+            ],
+            "merge-dev": true,
+            "merge-extra": false,
+            "merge-extra-deep": false,
+            "merge-scripts": false,
+            "recurse": true,
+            "replace": true
+        }
+    }
+}
