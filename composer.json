@@ -22,7 +22,7 @@
     ],
     "homepage": "https://github.com/psr-mock",
     "require": {
-        "php": "^8.0",
+        "php": "^8.1",
         "psr-mock/http-client-implementation": "^1.0",
         "psr-mock/http-factory-implementation": "^1.0",
         "psr-mock/http-message-implementation": "^1.0"

@@ -11,7 +11,7 @@ This suite is largely intended for inclusion in libraries like SDKs that consume
 
 ## Requirements
 
--   PHP 8.0+
+-   PHP 8.1+
 -   Composer 2.0+
 
 ## Installation
